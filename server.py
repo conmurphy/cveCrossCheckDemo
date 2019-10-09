@@ -6,11 +6,11 @@ def index():
     return render_template('index.html')
 
 @app.route('/cve')
-def index():
+def cve():
     return render_template('cve.html')
 
 @app.route('/eos')
-def index():
+def eos():
     return render_template('eos.html')
 
 
