@@ -5,5 +5,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/cve')
+def index():
+    return render_template('cve.html')
+
+@app.route('/eos')
+def index():
+    return render_template('eos.html')
+
+
 if __name__ == '__main__':
     app.run(port=3000,host= '0.0.0.0', debug=True)
